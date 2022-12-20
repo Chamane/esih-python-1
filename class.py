@@ -11,12 +11,17 @@ class Fichye:
         self.chemenfichye = chemenfichye
     
     def lekti(self):
-        f = open(self.chemenfichye, "r") 
-        return f.read()
+        with open(self.chemenfichye, "r") as f:
+            return f.read()
 
     def ajoute(self, elemanKipouAjoute):
-        f = open(self.chemenfichye, "a")
-        f.write(elemanKipouAjoute)
+        with open(self.chemenfichye, "a") as f:
+            f.write(elemanKipouAjoute)
+
+    def ajoute_devan(self, eleman):
+        with open(self.chemenfichye, "r+") as f:
+            content = f.read()
+            f.write(content+eleman)
 
     def efase(self):
         os.remove(self.chemenfichye)
