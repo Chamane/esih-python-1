@@ -57,8 +57,8 @@ class Poul(Vivan):
         super().__init__(self, pye, men, non, laj)
 
 
-dimitri = Mounn("Dimitri Pierre", 25)
-tikok = Poul("Tikòk", 3)
+# dimitri = Mounn("Dimitri Pierre", 25)
+# tikok = Poul("Tikòk", 3)
 
 if __name__ == "__main__":
     fichye = Fichye('fichye.txt')
