@@ -69,5 +69,4 @@ if __name__ == "__main__":
 
     fichye.efase()
 
-    print(vars(dimitri))
-    print(vars(tikok))
+    
